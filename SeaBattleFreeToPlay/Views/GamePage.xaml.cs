@@ -1,5 +1,4 @@
-﻿using SeaBattleFreeToPlay.ViewModels;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,21 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace SeaBattleFreeToPlay.Views
 {
 	/// <summary>
-	/// Логика взаимодействия для Authorise.xaml
+	/// Логика взаимодействия для GamePage.xaml
 	/// </summary>
-	public partial class Authorise : Window
+	public partial class GamePage : Page
 	{
-		public Authorise()
+		public GamePage()
 		{
 			InitializeComponent();
-			var test = (AuthoriseVM)DataContext;
-			test.RegisterPasswordBox(Password);
-			test.RegisterThisWindow(this);
 		}
 	}
 }

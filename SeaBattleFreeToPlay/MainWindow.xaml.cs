@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SeaBattleFreeToPlay.Tools;
+using SeaBattleFreeToPlay.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +25,8 @@ namespace SeaBattleFreeToPlay
 		public MainWindow()
 		{
 			InitializeComponent();
+			DataContext = Navigation.Instance;
+			Navigation.Instance.RegisterThisWindow(this);
 		}
 	}
 }

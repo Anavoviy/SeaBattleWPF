@@ -5,6 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SeaBattleFreeToPlay"
         mc:Ignorable="d"
+		WindowStartupLocation="CenterScreen"
         Title="MainWindow" Height="720" Width="1280">
-		
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="80"/>
+			<RowDefinition/>
+		</Grid.RowDefinitions>
+		<Button Content="Выход" Width="100" HorizontalAlignment="Left" Margin="10" Height="30" Command="{Binding Exit}"/> 
+		<Frame Grid.Row="1" Content="{Binding CurrentPage}"/>
+	</Grid>
 </Window>

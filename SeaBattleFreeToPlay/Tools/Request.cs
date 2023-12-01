@@ -19,12 +19,14 @@ namespace SeaBattleFreeToPlay.Tools
 				if (http == null)
 				{
 					http = new HttpClient();
-					http.BaseAddress = new Uri("https://localhost:7138");
+					http.BaseAddress = new Uri("https://localhost:7138/api/");
 				}
 				return http; 
 			} }
 
 		public static void SetBaseAddress(string address) => http.BaseAddress = new Uri(address);
+
+		public static void SetToken(string token) => http.DefaultRequestHeaders.Add("Authorization", ("Bearer " + token));
 
 		
 
