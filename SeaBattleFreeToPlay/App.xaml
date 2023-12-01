@@ -4,6 +4,9 @@
              xmlns:local="clr-namespace:SeaBattleFreeToPlay"
              StartupUri="Views/Authorise.xaml">
     <Application.Resources>
-         
-    </Application.Resources>
+		<SolidColorBrush Color="#900C3F" x:Key="Bordoviy"/>
+		<SolidColorBrush Color="#C70039" x:Key="Blood"/>
+		<SolidColorBrush Color="#F94C10" x:Key="Lava"/>
+		<SolidColorBrush Color="#F8DE22" x:Key="Sun"/>
+	</Application.Resources>
 </Application>

@@ -20,5 +20,10 @@ namespace SeaBattleFreeToPlay.Tools
 			GameDTO game = answer.Content.ReadFromJsonAsync<GameDTO>().Result;
 			return game;
 		}
+
+		public static bool JoinGame(int gameId)
+		{
+			throw new NotImplementedException();
+		}
 	}
 }
